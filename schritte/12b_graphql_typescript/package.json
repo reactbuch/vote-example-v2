@@ -1,0 +1,54 @@
+{
+  "name": "react-vote-example",
+  "version": "2.0.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.2",
+    "@types/jest": "24.0.23",
+    "@types/node": "12.12.14",
+    "@types/react": "16.9.13",
+    "@types/react-dom": "16.9.4",
+    "@types/react-router-dom": "^5.1.0",
+    "apollo-cache-inmemory": "^1.6.3",
+    "apollo-client": "^2.6.4",
+    "apollo-link": "^1.2.13",
+    "apollo-link-error": "^1.1.12",
+    "apollo-link-http": "^1.5.16",
+    "apollo-link-ws": "^1.0.19",
+    "graphql": "^14.5.8",
+    "graphql-tag": "^2.10.1",
+    "react": "16.12.0",
+    "react-app-polyfill": "^1.0.2",
+    "react-dom": "16.12.0",
+    "react-router-dom": "^5.1.0",
+    "react-scripts": "3.2.0",
+    "subscriptions-transport-ws": "^0.9.16",
+    "typescript": "3.7.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "codegen": "apollo client:codegen --target=typescript --globalTypesFile=src/global-query-types.ts querytypes",
+    "codegen:watch": "apollo client:codegen --target=typescript --globalTypesFile=src/global-query-types.ts --watch querytypes"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "apollo": "^2.18.3"
+  }
+}

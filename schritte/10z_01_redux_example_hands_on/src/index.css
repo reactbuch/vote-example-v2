@@ -1,0 +1,23 @@
+html {
+  padding: 24px;
+  line-height: 1.5;
+  font-family: "PT Sans", sans-serif;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.87);
+  user-select: none;
+  font-size: 24px;
+
+  height: 100vh;
+  background-color: #6fd2d2;
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: auto;
+}
+
+input,
+button {
+  font-size: 1rem;
+}

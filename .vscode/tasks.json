@@ -1,0 +1,67 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Backend",
+      "type": "npm",
+      "script": "start:debug",
+      "path": "voteapp-server/",
+      "problemMatcher": [],
+      "presentation": {
+        "group": "apps"
+      }
+    },
+    {
+      "label": "Hands on",
+      "type": "npm",
+      "script": "start",
+      "path": "hands-on/",
+      "problemMatcher": [],
+      "presentation": {
+        "group": "apps"
+      }
+    },
+    {
+      "label": "Frontend",
+      "type": "npm",
+      "script": "start",
+      "path": "app/",
+      "problemMatcher": [],
+      "presentation": {
+        "group": "apps"
+      }
+    },
+    {
+      "label": "Frontend TypeScript",
+      "type": "npm",
+      "script": "start",
+      "path": "app-typescript/",
+      "problemMatcher": "$tsc",
+      "presentation": {
+        "group": "apps"
+      }
+    },
+    {
+      "label": "Frontend ES6 Klassen",
+      "type": "npm",
+      "script": "start",
+      "path": "app-es6-classes/",
+      "problemMatcher": [],
+      "presentation": {
+        "group": "apps"
+      }
+    },
+    {
+      "label": "ALL WITH FRONTEND HOOKS",
+      "dependsOn": ["Backend", "Frontend Hooks"],
+      "problemMatcher": []
+    },
+    {
+      "label": "ALL",
+      "dependsOn": ["Backend", "Frontend"],
+      "problemMatcher": []
+    }
+  ]
+}

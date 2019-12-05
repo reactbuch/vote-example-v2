@@ -1,0 +1,22 @@
+{
+  "name": "voteapp-graphql-server",
+  "version": "1.0.0",
+  "main": "src/server.js",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.3.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.17.1"
+  },
+  "dependencies": {
+    "apollo-server": "^2.9.5",
+    "graphql": "^14.5.8"
+  },
+  "scripts": {
+    "start": "nodemon --inspect src/server.js",
+    "start:slow": "nodemon --inspect src/server.js slowMode",
+    "eslint": "eslint src/**"
+  }
+}

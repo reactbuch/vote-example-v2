@@ -1,0 +1,28 @@
+node_modules/
+_dist/
+dist/
+mongodb-data/
+_generated/
+coverage/
+npm-debug.log
+yarn-error.log
+hands-on-copy/
+
+
+.idea/
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# production
+build/
+
+# misc
+.DS_Store
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
+**/npm-debug.log*
+**/yarn-debug.log*
+**/yarn-error.log*

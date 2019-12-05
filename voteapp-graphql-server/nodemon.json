@@ -1,0 +1,5 @@
+{
+  "events": {
+    "start": "echo \"\\x1Bc\""
+  }
+}

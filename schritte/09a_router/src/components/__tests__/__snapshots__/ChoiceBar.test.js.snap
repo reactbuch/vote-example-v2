@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly (Snapshot Example) 1`] = `
+<div
+  className="ChoiceBar"
+>
+  <div
+    className="Progress"
+    style={
+      Object {
+        "width": "33%",
+      }
+    }
+  >
+    <div
+      className="ChoiceBarTitle"
+    >
+      Hello
+    </div>
+  </div>
+  <div
+    className="ChoiceBarBadge"
+  >
+    123
+  </div>
+</div>
+`;

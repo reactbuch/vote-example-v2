@@ -1,0 +1,9 @@
+dist/
+lib/
+package.json
+package-lock.json
+mongodb-votes.json
+node_modules/
+*.min.js
+fonts.css
+google-fonts.css

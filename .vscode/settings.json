@@ -1,0 +1,23 @@
+{
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true,
+    "*.iml": true,
+    "**/yarn-error.log": true,
+    "**/node_modules": true,
+    "**/yarn.lock": true,
+    "**/package-lock.json": false,
+    ".gitattributes": true,
+    ".prettierignore": true,
+    "**/db-data": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    { "language": "typescript", "autoFix": true },
+    { "language": "typescriptreact", "autoFix": true }
+  ],
+  "eslint.provideLintTask": true
+}

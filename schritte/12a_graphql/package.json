@@ -1,0 +1,48 @@
+{
+  "name": "react-vote-example",
+  "version": "2.0.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.2",
+    "apollo-cache-inmemory": "^1.6.3",
+    "apollo-client": "^2.6.4",
+    "apollo-link": "^1.2.13",
+    "apollo-link-error": "^1.1.12",
+    "apollo-link-http": "^1.5.16",
+    "apollo-link-ws": "^1.0.19",
+    "graphql": "^14.5.8",
+    "graphql-tag": "^2.10.1",
+    "react": "16.12.0",
+    "react-app-polyfill": "^1.0.2",
+    "react-dom": "16.12.0",
+    "react-router-dom": "^5.1.0",
+    "react-scripts": "3.2.0",
+    "subscriptions-transport-ws": "^0.9.16"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.0.0",
+    "@testing-library/react": "^8.0.5",
+    "react-test-renderer": "^16.9.0"
+  }
+}
