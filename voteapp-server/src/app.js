@@ -39,6 +39,32 @@ const createApp = votesDatabase => {
     });
   });
 
+  app.get("/api/v2/votes", (req, res) => {
+    const pagesize = req.query.pagesize || 5;
+    const page = req.query.page || 1;
+    votesDatabase.getAllVotes((err, votes) => {
+      if (err) {
+        console.error(err);
+        return res.status(400).json({ error: `Loading votes failed!` });
+      }
+
+      const hasPrevPage = page > 1;
+      const from = (page - 1) * pagesize;
+      const end = from + pagesize;
+      const result = votes.slice(from, end);
+      const hasNextPage = page * pagesize < votes.length;
+
+      res.json({
+        page,
+        pagesize,
+        totalcount: votes.length,
+        hasPrevPage,
+        hasNextPage,
+        result
+      });
+    });
+  });
+
   app.get("/api/votes/:voteId", (req, res) => {
     const voteId = req.params.voteId;
     votesDatabase.getVoteById(voteId, (err, vote) => {
