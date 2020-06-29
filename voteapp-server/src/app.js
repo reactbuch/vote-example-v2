@@ -40,8 +40,8 @@ const createApp = votesDatabase => {
   });
 
   app.get("/api/v2/votes", (req, res) => {
-    const pagesize = req.query.pagesize || 5;
-    const page = req.query.page || 1;
+    const pagesize = parseInt(req.query.pagesize || 5);
+    const page = parseInt(req.query.page || 1);
     votesDatabase.getAllVotes((err, votes) => {
       if (err) {
         console.error(err);
@@ -58,6 +58,7 @@ const createApp = votesDatabase => {
         page,
         pagesize,
         totalcount: votes.length,
+        totalpages: Math.ceil(votes.length / pagesize),
         hasPrevPage,
         hasNextPage,
         result
