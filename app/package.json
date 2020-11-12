@@ -2,6 +2,7 @@
   "name": "react-vote-example",
   "version": "2.0.0",
   "private": true,
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "react": "16.12.0",
     "react-app-polyfill": "^1.0.2",
