@@ -14,4 +14,9 @@ dass Du diese Versionen verwendest. Dann kannst Du uns gerne einen Issue im GitH
 - `hands-on`: In diesem Verzeichnis kannst Du die Anwendung mit dem Buch Schritt-für-Schritt entwickeln
 - `schritte`: Hier stehen die fertigen Teile nach jedem Kapitel im Buch.
 - `voteapp-server`: Das Backend für die Vote-Anwendung (REST API auf Basis eines Express-Servers)
-- `voteapp-graphql-server`: Das GraphQL-Backend für die Anwendung im Schritt 12.
+- `voteapp-graphql-server`: Das GraphQL-Backend für die Anwendung im Schritt 12. 
+
+### GraphQL Server auf Spring Boot-Basis
+
+Wenn Du im Backend Spring Boot mit GraphQL verwendet, kannst Du dir diese Java-basierte Implementierung ansehen, die Alexander Pohl gebaut hat: [https://github.com/apo1967/voteapp-server-graphql](https://github.com/apo1967/voteapp-server-graphql)
+
