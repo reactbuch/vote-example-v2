@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "body-parser": "^1.16.1",
-    "express": "^4.14.1"
+    "express": "^4.14.1",
+    "fs": "^0.0.1-security",
+    "https": "^1.0.0"
   },
   "scripts": {
     "start": "node src/server.js",
