@@ -6,10 +6,10 @@ const fs = require('fs');
 
 const port = process.env.SERVER_PORT || 3000;
 
-var privateKey  = fs.readFileSync('.cert/server.key', 'utf8');
-var certificate = fs.readFileSync('.cert/server.crt', 'utf8');
- 
-var credentials = {key: privateKey, cert: certificate};
+const privateKey  = fs.readFileSync('.cert/server.key', 'utf8');
+const certificate = fs.readFileSync('.cert/server.crt', 'utf8');
+
+const credentials = {key: privateKey, cert: certificate};
 
 Database.create((err, database) => {
   if (err) {
