@@ -18,6 +18,7 @@
   },
   "scripts": {
     "start": "node src/server.js",
+    "start-https": "HTTPS=true node src/server.js",
     "start:debug": "nodemon --inspect src/server.js",
     "eslint": "eslint src/**"
   }
